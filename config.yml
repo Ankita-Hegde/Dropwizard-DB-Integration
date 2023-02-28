@@ -1,0 +1,29 @@
+logging:
+  level: INFO
+  loggers:
+    com.ankitadb: DEBUG
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 4000
+  adminConnectors:
+    - type: http
+      port: 4001
+
+database:
+  # the name of your JDBC driver
+  driverClass: com.mysql.cj.jdbc.Driver
+
+  # the username
+  user: root
+
+  # the password
+  password: Anmysql2!
+
+  # the JDBC URL
+  url: jdbc:mysql://localhost:3306/Employee_Data?autoReconnect=true&useSSL=false
+
+  # any properties specific to your JDBC driver:
+  properties:
+    charSet: UTF-8
